@@ -35,4 +35,4 @@ jobs:
             echo "Conectando no EC2"
             echo "${{secrets.TETEH_SECRETA}}" > private_key && chmod 600 private_key
             ssh -o StrictHostKeyChecking=no -i private_key ubuntu@ec2-3-82-233-120.compute-1.amazonaws.com "
-                  cd POC_TETEH/;git pull;./iniciarApp.sh"
+                  cd POC_TETEH/;git pull;./executar.sh"
